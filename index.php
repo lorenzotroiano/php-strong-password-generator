@@ -11,13 +11,19 @@
     <form>
         <label for="">Inserisci numero di caratteri:</label>
         <input type="number" value="num" name="num">
-        <input type="submit" value="Invia">
+        <input type="submit" value="Invia" ;>
     </form>
 
 
     <?php
     include 'functions.php';
     echo generatePassword($numScelto);
+
+    // if ($numScelto) {
+    //     header('Location: yourpassw.php');
+    //     echo generatePassword($numScelto);
+    // }
+
     ?>
 </body>
 

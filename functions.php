@@ -1,6 +1,8 @@
 <?php
 
 $numScelto = $_GET["num"];
+
+
 // var_dump($numScelto);
 
 
