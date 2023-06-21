@@ -13,7 +13,12 @@
 <body>
     <?php
     include 'functions.php';
-    echo generatePassword($numScelto);
+    session_start();
+    if (!empty($_SESSION['passwordGen'])) {
+        echo "Ecco la tua passw: " . $_SESSION['passwordGen'];
+    }
+    // include 'functions.php';
+    // echo generatePassword($numScelto);
     ?>
 
 </body>

@@ -16,13 +16,16 @@
 
 
     <?php
-    include 'functions.php';
-    echo generatePassword($numScelto);
+    session_start();
 
-    // if ($numScelto) {
-    //     header('Location: yourpassw.php');
-    //     echo generatePassword($numScelto);
-    // }
+    include 'functions.php';
+    $passwordGenerata = generatePassword($numScelto);
+
+    $_SESSION['passwordGen'] = $passwordGenerata;
+    if ($numScelto) {
+        header('Location: yourpassw.php');
+        // echo generatePassword($numScelto);
+    }
 
     ?>
 </body>
