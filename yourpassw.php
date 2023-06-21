@@ -21,6 +21,7 @@
     // echo generatePassword($numScelto);
     ?>
 
+    <a href="index.php">Clicca qui per generare una nuova password</a>
 </body>
 
 </html>
